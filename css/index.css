@@ -160,6 +160,29 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.containerhome {
+  display: flex;
+  flex-direction: column;
+}
+.containerhome header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.containerhome header h1 {
+  justify-content: center;
+  color: navy;
+}
+.containerhome header nav {
+  justify-content: center;
+}
+.containerhome header nav a {
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
