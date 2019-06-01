@@ -1,31 +1,39 @@
 // Navigation code here
 
-.containerhome {
+.container.home {
     display: flex;
     flex-direction: column;
     header{
         width: 100%;
         display: flex;
         justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
 
         h1 {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            font-size: 4rem;
             justify-content: center;
-            color: navy;
+            align-items: center;
         }
 
         nav {
-            justify-content: center;
+            justify-content: space-around;
+            width: 60%;
+            display: flex;
+            padding-bottom: 1rem;
+            
             a {
-                justify-content: space-around;
-                text-decoration: none;
                 color: black;
+                font-size: 1.5rem;
+                text-decoration: none;
             }
         }
 
         .top-image {
-
+            border-radius: 2%;
         }
     }
 }

@@ -1,3 +1,6 @@
+.flex {
+  display: flex;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,28 +163,38 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.containerhome {
+.container.home {
   display: flex;
   flex-direction: column;
 }
-.containerhome header {
+.container.home header {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
-.containerhome header h1 {
+.container.home header h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
   justify-content: center;
-  color: navy;
+  align-items: center;
 }
-.containerhome header nav {
-  justify-content: center;
-}
-.containerhome header nav a {
+.container.home header nav {
   justify-content: space-around;
-  text-decoration: none;
+  width: 60%;
+  display: flex;
+  padding-bottom: 1rem;
+}
+.container.home header nav a {
   color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.container.home header .top-image {
+  border-radius: 2%;
 }
 footer {
   color: #22283B;
@@ -234,6 +247,10 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button.signup {
+  background-color: navy;
+  color: white;
 }
 .home .walk .walk-img {
   width: 46%;
