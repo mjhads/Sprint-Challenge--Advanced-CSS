@@ -4,8 +4,18 @@
     display: flex;
 }
 
-.custom-layout(@justify, @align) {
+.jsa {
+    justify-content: space-around;
+}
+
+.center {
     display: flex;
-    justify-content: @justify;
-    align-items: @align;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-home (@color, @bgcolor) {
+    color: @color;
+    background-color: @bgcolor;
+    border-color:navy;
 }

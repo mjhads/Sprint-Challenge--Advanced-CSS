@@ -1,39 +1,35 @@
 // Navigation code here
 
-.container.home {
-    display: flex;
-    flex-direction: column;
-    header{
+body {
+    .h1-nav{
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-
+         .center;
+         flex-direction: column;
+         flex-wrap: nowrap;
+         @media @phone {
+             background: whitesmoke;         }
         h1 {
             margin-top: 1rem;
             margin-bottom: 2rem;
             font-size: 4rem;
-            justify-content: center;
-            align-items: center;
+            .center;
         }
 
         nav {
-            justify-content: space-around;
+            .jsa;
             width: 60%;
             display: flex;
             padding-bottom: 1rem;
-            
-            a {
+
+            a{
                 color: black;
                 font-size: 1.5rem;
                 text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
-
-        .top-image {
-            border-radius: 2%;
-        }
     }
+    
 }
