@@ -2,21 +2,13 @@
     @media @phone {
         .flex();
         flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
       }
     header.intro {
         @mobile @phone {
             .flex();
 
-        }
-        h1 {
-
-        }
-
-        nav {
-
-            a{
-
-            }
         }
 
         img.top-image {
@@ -25,8 +17,9 @@
 
         h2 {
             padding: 15px;
-            @mobile @phone {
+            @media @phone {
                 justify-content: flex-start;
+                margin: 1rem 0;
             }
         }
 
@@ -99,15 +92,14 @@
                     border-radius: 5px;
                     font-size: 2rem;
                     .cta-home (@color: white, @bgcolor: navy);
-                    &hover {
+                    &:hover {
                         background: white;
                         border-color: navy;
                         color: navy;
                     }
                     @media @phone {
                         justify-content: center;
-                        padding-left: 35%;
-                        padding-right: 35%;    
+                        width: 85%;
                     }
                 }
             }
